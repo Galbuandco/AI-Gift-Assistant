@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Suggestion Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('sfondo.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            font-weight: 500;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 8px whitesmoke;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.336);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
+        form {
+            margin: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-effect">
+        
+        <form id="gift-form">
+            <fieldset>
+
+                <legend>Recipient Information</legend>
+                <div class="line">
+                    <label for="relationship">Relationship to User:</label>
+                    <input class="field" type="text" id="relationship" name="relationship" required>
+                </div>
+
+                <div class="line">
+                    <label for="age-group">Age:</label>
+                    <input class="field" type="text" id="age-group" name="age-group" required>
+                </div>
+
+                <div class="line">
+                    <label for="gender">Gender:</label>
+                    <input class="field" type="text" id="gender" name="gender" required>
+                </div>
+
+                <div class="line">
+                    <label for="interests">Interests and Hobbies:</label>
+                    <input placeholder="(e.g., sports, technology, art)." class="field" type="text" id="interests" name="interests" required>
+                </div>
+
+                <div class="line">
+                    <label for="occupation">Occupation:</label>
+                    <input class="field" type="text" id="occupation" name="occupation" required>
+                </div>
+
+                <div class="line">
+                    <label for="lifestyle">Lifestyle:</label>
+                    <input placeholder="(e.g., outdoorsy, minimalist, eco-conscious)." class="field" type="text" id="lifestyle" name="lifestyle" required>
+                </div>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Occasion Details</legend>
+                <div class="line">
+                    <label for="event-type">Type of Event:</label>
+                    
+                    <input placeholder="(e.g., birthday, wedding, promotion)." class="field" type="text" id="event-type" name="event-type" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Budget and Preferences</legend>
+                <div class="line">
+                    <label for="budget">Budget Range:</label>
+                    <input class="field" type="text" id="budget" name="budget" required>
+                </div>
+
+                <div class="line">
+                    <label for="type">Preferred Gift Type(optional):</label>
+                    <input class="field" type="text" id="type" name="type">
+                </div>
+               
+            </fieldset>
+            <div id="center">
+                <input type="button" name="settings" id="settings" value="Preferences">
+                <input id="submit-button" type="submit" value="HELP ME!">
+            </div>
+            
+        </form>
+
+        <div id="center">
+            <div id="gift-suggestion"></div>
+        </div>
+        
+    </div>
+
+   
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>

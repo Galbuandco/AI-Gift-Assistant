@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide: Choosing Between Local and Remote AI Models</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #16a085;
+            border-bottom: 2px solid #16a085;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 0 20px 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .advantages, .disadvantages {
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .advantages {
+            background-color: #e8f8f5;
+        }
+        .disadvantages {
+            background-color: #fdecea;
+        }
+        a{
+            color: #16a085;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choosing Between Local Model and API Model</h1>
+        
+        <h2>Local AI Model</h2>
+        <div class="advantages">
+            <p><strong>Advantages:</strong></p>
+            <ul>
+                <li><strong>Privacy:</strong> Your data stays on your local machine, ensuring privacy and security.</li>
+                <li><strong>Totally Free:</strong> You won't need anything else than your device.</li>
+            </ul>
+        </div>
+        <div class="disadvantages">
+            <p><strong>Disadvantages:</strong></p>
+            <ul>
+                <li><strong>Resource Intensive:</strong> Requires significant computational resources and storage.</li>
+                <li><strong>Experimental:</strong> The AI model is Gemini Nano which is used with the chrome experimental built-in AI which is still under development. <br>
+                Check out <a href="https://developer.chrome.com/docs/ai/built-in?hl=it">Chrome Documentation</a>
+                </li>
+            </ul>
+        </div>
+        
+        <h2>API Model</h2>
+        <div class="advantages">
+            <p><strong>Advantages:</strong></p>
+            <ul>
+                <li><strong>Performance:</strong> No worrying about hardware limitations.</li>
+            </ul>
+        </div>
+        <div class="disadvantages">
+            <p><strong>Disadvantages:</strong></p>
+            <ul>
+                <li><strong>Data Privacy:</strong> Your data is sent to a remote server, in this case Google's server as Gemini is Google's latest AI model.</li>
+                <li><strong>Also free:</strong> You will need a Gemini API key, which is free, you just have to login with your account at this link <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a>.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
